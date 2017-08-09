@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/topbanner">
+
+        <ImageView
+            android:id="@+id/ivback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.1"
+            android:src="@drawable/left" />
+
+        
+              <TextView
+               android:id="@+id/tvtitle"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:gravity="center"
+               android:textSize="20sp"
+               android:layout_weight="0.8"
+               android:textColor="#FFFFFF"
+               android:text="影像资料" />
+              
+
+        <ImageView
+            android:id="@+id/ivvideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            android:src="@drawable/video" />
+        
+    </LinearLayout>
+    
+    <ListView
+        android:id="@+id/lvdata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+      </ListView>
+    <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#444444"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:background="#EEEEEE"
+        >
+
+       
+          
+        <ImageView
+            android:id="@+id/ivpreview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:src="@drawable/preview" />
+        <ImageView
+            android:id="@+id/ivupload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:src="@drawable/up" />
+        <ImageView
+            android:id="@+id/ivdelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:src="@drawable/delete" />
+        
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EEEEEE"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+       
+        <TextView
+               android:id="@+id/tvmenu2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:layout_weight="0.33"
+               android:textSize="12sp"
+               
+               android:text="预览" />
+        <TextView
+               android:id="@+id/tvmenu3"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:layout_weight="0.33"
+               android:textSize="12sp"
+               
+               android:text="上传" />
+        <TextView
+               android:id="@+id/tvmenu4"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:layout_weight="0.33"
+               android:textSize="12sp"
+               
+               android:text="删除" />
+       
+          
+        
+
+    </LinearLayout>
+
+    
+
+</LinearLayout>

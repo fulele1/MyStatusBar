@@ -1,0 +1,188 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/topbanner">
+
+        <ImageView
+            android:id="@+id/ivback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.1"
+            android:visibility="invisible"
+            android:src="@drawable/left" />
+
+        <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:layout_weight="0.8"
+             android:orientation="vertical">
+              <TextView
+               android:id="@+id/tvtitle"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:textSize="20sp"
+               android:layout_weight="0.8"
+               android:textColor="#FFFFFF"
+               android:text="@string/app_title" />
+              <TextView
+               android:id="@+id/tvuser"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:textSize="12sp"
+               android:layout_weight="0.2"
+               android:textColor="#FFFFFF"
+               android:text="用户" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivvideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            android:src="@drawable/video" />
+        
+    </LinearLayout>
+    
+   
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp">
+        <ImageView
+            android:id="@+id/ivvideolist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:src="@drawable/videolist" />
+        <ImageView
+            android:id="@+id/ivvideocapture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:src="@drawable/videocapture" />
+        <ImageView
+            android:id="@+id/ivvideolog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:src="@drawable/videolog" />
+       
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+       
+        <TextView
+               android:id="@+id/tvmenu2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:layout_weight="0.16"
+               android:textSize="12sp"
+               
+               android:text="影像资料" />
+        <TextView
+               android:id="@+id/tvmenu3"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:layout_weight="0.16"
+               android:textSize="12sp"
+               
+               android:text="资料采集" />
+        <TextView
+               android:id="@+id/tvmenu4"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:layout_weight="0.16"
+               android:textSize="12sp"
+               
+               android:text="错误日志" />
+        
+          
+        
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp">
+        <ImageView
+            android:id="@+id/ivvideoupload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:src="@drawable/videoupload" />
+        <ImageView
+            android:id="@+id/ivvideoset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:src="@drawable/videoset" />
+        <ImageView
+            android:id="@+id/ivvideoquit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:src="@drawable/videoquit" />
+       
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+       
+        <TextView
+               android:id="@+id/tvmenu5"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:layout_weight="0.16"
+               android:textSize="12sp"
+               
+               android:text="上传进度" />
+        <TextView
+               android:id="@+id/tvmenu6"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:layout_weight="0.16"
+               android:textSize="12sp"
+               
+               android:text="系统设置" />
+        <TextView
+               android:id="@+id/tvmenu7"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:layout_weight="0.16"
+               android:textSize="12sp"
+               
+               android:text="退出系统" />
+        
+          
+        
+
+    </LinearLayout>
+
+    
+
+</LinearLayout>
