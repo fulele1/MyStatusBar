@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_clue_detial"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.xaqb.newexpress.ClueDetialActivity">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@color/wirte"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="发现可疑人物，寄送物品既然不让打开，也不刘身份信息"
+                android:textSize="@dimen/pro"
+                android:textColor="@color/black"
+                ></TextView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_padding_small"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                    android:id="@+id/txt_come_lcl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/ 陕西全峰快递有限公司 /"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/edit_text"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_date_lcl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="李元芳  09-17"
+                    android:textSize="@dimen/edit_text"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margins"
+                    />
+
+            </LinearLayout>
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="这些拥有“菩萨心肠”的人总是告诫我们：你要学会宽容。宽容既是给别人出路，也是给自己出路。就像你被狗咬了，难道还反过去咬狗……
+
+在这些蛮横的善良面前我们瞠目结舌，无言以对。
+
+“宽容”一词一旦出现，万马齐喑，无人敢言，所到之处如沐春风，风月无边。
+
+于是，中国人在忍文化中长大，碍于情面，对伤害你的人一忍再忍。
+
+龙应台在《中国人你为什么不生气》中指出比起规则制度，似乎人情面子才是决定社会秩序的关键，比起较真冲突，人们更习惯于“息事宁人、和气生财”，并美其名曰“中庸”。
+            他人有错，你不要与人过不去。你要反思自身，有则改，无则加勉。受到伤害，要以德报怨。冤冤相报何时了，不如宽容比较好。
+
+        “中国式宽容”像是一锅毒鸡汤，劝客们满心热切地劝你干了它，它看上去是那么的滋润大补，其实内在里早已变了质。
+
+        比起诚恳的道歉、解决问题、寻求谅解，这种宽容更倾向于简单粗暴地将过失转嫁到受损方身上，利用道德绑架，逼着人们做出谅解的姿态。前段时间，一条《送餐车违停被拖走，外卖小哥拎饭下跪》的微博在网上疯传，说是在济南某广场附近，一外卖小哥因违规停车，执法人员准备把车拖走时外卖小哥竟拎饭当街下跪，求执法人员不要拖车。
+
+        很多人在看到照片之后，大呼“好心疼”，并声讨执法人员不近人情，觉得外卖小哥为了准时送餐很不容易，值得原谅。
+
+        即便违停是不争的事实，但他用下跪的方式向公众示弱，很容易博得一众同情心泛滥的吃瓜群众帮他开脱。
+
+        “都不容易”成为不讲道理，向不公正让渡权利的代名词，也使得宽容成为一种强制性的表态。
+
+        有一名叫“蜀道驿使”的网友说得好：“生活不易，但是也要遵守规则，否则就乱套了。” "/>
+
+
+
+            </ScrollView>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+</LinearLayout>
