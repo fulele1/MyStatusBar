@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_horizontal_margins"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".LoginActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_marginx"
+        android:drawablePadding="@dimen/activity_horizontal_margin"
+        android:drawableTop="@mipmap/pic_what"
+        android:gravity="center"
+        android:text="@string/logo_login"
+        android:textColor="#fcfcff"
+        android:textSize="@dimen/pro" />
+
+
+    <LinearLayout
+        android:id="@+id/lay_cen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_horizontal_marginx"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margins"
+            android:orientation="vertical"
+            android:padding="@dimen/layout_padding">
+
+
+            <EditText
+                android:id="@+id/et_phone_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:background="@null"
+                android:hint="@string/ephone"
+                android:textColor="@color/wirte"
+                android:textColorHint="#9d9dec"
+                android:textSize="@dimen/edit_text" />
+
+            <LinearLayout style="@style/horizontal_black_line_small_login"></LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:orientation="vertical"
+            android:padding="@dimen/layout_padding">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_psw_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/epsw"
+                    android:password="true"
+                    android:textColor="@color/wirte"
+                    android:textColorHint="#9d9dec"
+                    android:textSize="@dimen/edit_text" />
+
+                <TextView
+                    android:id="@+id/tv_find_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/find"
+                    android:textColor="@color/text_write"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/horizontal_black_line_small_login"></LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:drawableLeft="@mipmap/finished_login"
+            android:textColor="@color/wirte" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_login_login"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/bg_button_selector"
+        android:text="登录"
+        android:textColor="@color/text_write" />
+
+</RelativeLayout>
