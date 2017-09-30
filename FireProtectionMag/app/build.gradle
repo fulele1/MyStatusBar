@@ -26,10 +26,13 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:25.3.1'
     testCompile 'junit:junit:4.12'
-    compile 'com.bigkoo:convenientbanner:2.0.5'//轮播图
     compile 'com.google.android.gms:play-services-appindexing:8.4.0'
     compile files('libs/okhttp-3.4.2.jar')
     compile files('libs/gson-2.8.0.jar')
     compile files('libs/zxing.jar')
-    compile files('libs/mpandroidchartlibrary-2-1-6.jar')
+    compile 'com.bigkoo:convenientbanner:2.0.5'//轮播图
+    compile files('libs/mpandroidchartlibrary-2-1-6.jar')//曲线图
+    compile 'com.github.jdsjlzx:LRecyclerView:1.4.3'//下拉刷新
+
+
 }

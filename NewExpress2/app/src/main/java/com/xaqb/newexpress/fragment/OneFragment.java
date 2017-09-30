@@ -36,8 +36,6 @@ public class OneFragment extends BaseFragment implements View.OnClickListener{
     private ImageView iv_msg;
     private ConvenientBanner mCb;
     private List<Integer> mImageList;
-    private static final int SUCCESS = 1;
-    private static final int FALL = 2;
     private TextView txt_com ;
     private TextView txt_per ;
     private TextView txt_map ;
@@ -70,9 +68,7 @@ public class OneFragment extends BaseFragment implements View.OnClickListener{
 
     public void initData() {
         mImageList = new ArrayList();
-        mImageList.add(R.mipmap.main_pic1);
-        mImageList.add(R.mipmap.main_pic2);
-        mImageList.add(R.mipmap.main_pic3);
+        mImageList.add(R.mipmap.index_banner_main);
         cbSetPage();
         mCb.startTurning(2000);
         cbItemEvent();
@@ -145,9 +141,9 @@ public class OneFragment extends BaseFragment implements View.OnClickListener{
             public CbHolder createHolder() {
                 return new CbHolder();
             }
-        },mImageList)
-         .setPageIndicator(new int[] {R.mipmap.pointn, R.mipmap.pointc})
-         .setPageIndicatorAlign(ConvenientBanner.PageIndicatorAlign.ALIGN_PARENT_LEFT);
+        },mImageList);
+//         .setPageIndicator(new int[] {R.mipmap.pointn, R.mipmap.pointc})
+//         .setPageIndicatorAlign(ConvenientBanner.PageIndicatorAlign.ALIGN_PARENT_LEFT);
     }
 
 

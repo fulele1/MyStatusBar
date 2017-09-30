@@ -11,16 +11,16 @@ public class HttpUrlUtils {
     }
 
     private String getBaseUrl() {
-        return "http://192.168.0.112:8888/v1/";
+        return "http://192.168.0.112:5200/v1/";
     }
 
     /**
      * 登录
-     *
+     * www.firecontrol.com/v1/mfirestation/index/login
      * @return
      */
     public String userLogin() {
-        return getBaseUrl() + "governor/index/login";
+        return getBaseUrl() + "mfirestation/index/login";
     }
 
 

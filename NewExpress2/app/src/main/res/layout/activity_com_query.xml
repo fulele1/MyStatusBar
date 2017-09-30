@@ -36,6 +36,7 @@
                 android:hint="@string/please_choose_brand"
                 android:textSize="@dimen/edit_text"
                 android:background="@null"
+                android:focusable="false"
                 />
             <LinearLayout
                 style="@style/horizontal_black_line_small"
@@ -67,11 +68,11 @@
                 android:hint="@string/please_choose_org"
                 android:textSize="@dimen/edit_text"
                 android:background="@null"
+                android:focusable="false"
                 />
         </RelativeLayout>
 
     </LinearLayout>
-
 
 
     <LinearLayout

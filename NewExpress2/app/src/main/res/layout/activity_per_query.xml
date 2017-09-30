@@ -161,13 +161,13 @@
                 android:id="@+id/et_org_pq"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
                 android:drawableRight="@mipmap/go"
                 android:hint="@string/please_choose_org"
                 android:background="@null"
                 android:focusable="false"
                 android:textSize="@dimen/edit_text"
-                />
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true" />
         </RelativeLayout>
 
     </LinearLayout>

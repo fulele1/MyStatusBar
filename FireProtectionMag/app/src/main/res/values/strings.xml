@@ -5,10 +5,10 @@
     <string name="cars">运送中</string>
     <string name="check">已签收</string>
     <string name="kefu">客服中心</string>
-    <string name="per_msg">从业人员</string>
-    <string name="com_msg">企业信息</string>
-    <string name="map">地图导航</string>
-    <string name="clue_msg">线索信息</string>
+    <string name="per_msg">任务管理</string>
+    <string name="com_msg">签到管理</string>
+    <string name="map">日志管理</string>
+    <string name="clue_msg">下发公告</string>
     <string name="exit">退出系统</string>
     <string name="mdf_psw">修改密码</string>
     <string name="comurl">www.qbdongdong.com</string>
@@ -81,7 +81,7 @@
     <string name="three">数据分析</string>
     <string name="data">数据统计查询</string>
     <string name="four">我的</string>
-    <string name="logo_login">新寄递·警员版</string>
+    <string name="logo_login">消防管理</string>
     <string name="com">企业</string>
     <string name="brand">品牌</string>
     <string name="responsible_Per">负责人</string>
@@ -107,4 +107,6 @@
     <string name="please_choose_org">请选择管辖机构</string>
     <string name="please_write_com_name">请输入企业名称...</string>
     <string name="six">性别</string>
+    <string name="header_text">签到信息</string>
+
 </resources>

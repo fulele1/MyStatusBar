@@ -26,7 +26,6 @@ public class ClueListActivity extends BaseActivity implements AdapterView.OnItem
     @Override
     public void initView() {
         instance = this;
-        setStatusColorB(instance.getResources().getColor(R.color.wirte), View.VISIBLE,true);
         setContentView(R.layout.activity_clue_list);
         mList = (ListView) findViewById(R.id.list_clc);
         mList.setDivider(new ColorDrawable(getResources().getColor(R.color.background)));

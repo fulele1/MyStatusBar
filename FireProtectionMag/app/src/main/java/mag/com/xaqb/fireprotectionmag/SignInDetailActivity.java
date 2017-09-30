@@ -1,21 +1,20 @@
 package mag.com.xaqb.fireprotectionmag;
 
-import android.view.View;
 
-public class MapNavgActivity extends BaseActivity {
-    private MapNavgActivity instance;
+public class SignInDetailActivity extends BaseActivity {
+    private SignInDetailActivity instance;
 
 
     @Override
     public void initTitle() {
-        setTitleB("地图导航");
+        setTitleB("签到详情");
+
     }
 
     @Override
     public void initView() {
+        setContentView(R.layout.activity_sign_in_detail);
         instance = this;
-        setStatusColorB(instance.getResources().getColor(R.color.wirte), View.VISIBLE,true);
-        setContentView(R.layout.activity_map_navg);
     }
 
     @Override

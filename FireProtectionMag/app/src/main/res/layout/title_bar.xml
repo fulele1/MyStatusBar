@@ -2,9 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/ly_title_bar"
     android:layout_width="match_parent"
-    android:layout_height="60dp"
+    android:layout_height="80dp"
     android:orientation="horizontal"
     android:background="@color/wirte"
+    android:paddingTop="@dimen/activity_horizontal_margins"
     >
     <TextView
         android:id="@+id/tv_back_title"

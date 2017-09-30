@@ -11,7 +11,6 @@ import android.widget.TextView;
 import java.util.Map;
 
 import mag.com.xaqb.fireprotectionmag.impl.OnOkDataFinishedListener;
-import mag.com.xaqb.fireprotectionmag.util.AppUtils;
 import mag.com.xaqb.fireprotectionmag.util.GsonUtil;
 import mag.com.xaqb.fireprotectionmag.util.HttpUrlUtils;
 import mag.com.xaqb.fireprotectionmag.util.LogUtil;
@@ -34,12 +33,6 @@ public class LoginActivity extends BaseActivity implements OnOkDataFinishedListe
 
     @Override
     public void initView() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-            // 透明状态栏
-            getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-            // 透明导航栏
-            getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
-        }
 
         if ((Boolean) SPUtil.get(this, "FirstIn", true) == true) {
             setContentView(R.layout.activity_login);
@@ -111,9 +104,6 @@ public class LoginActivity extends BaseActivity implements OnOkDataFinishedListe
         } else if (mPsw.equals("")) {
             showToastB("请输入密码");
             return;
-        } else if (AppUtils.getInfo(instance).equals("")) {
-            showToastB("无法获取当前设备号");
-            return;
         }
 
         //进行POST网络请求
@@ -145,7 +135,6 @@ public class LoginActivity extends BaseActivity implements OnOkDataFinishedListe
          */
 
             LogUtil.i(data.get("access_token").toString());
-
             SPUtil.put(instance, "access_token", data.get("access_token").toString());//access_token值
             SPUtil.put(instance, "loginNum", mPhone);
             SPUtil.put(instance, "password", mPsw);
@@ -156,9 +145,6 @@ public class LoginActivity extends BaseActivity implements OnOkDataFinishedListe
         } else {
             showToastB("请输入正确的用户名或者密码");
         }
-
-
     }
-
 
 }

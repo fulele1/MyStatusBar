@@ -16,12 +16,11 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/main"
+            android:background="@color/main_title"
             android:orientation="horizontal"
-            android:paddingTop="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_horizontal_margins"
             android:paddingLeft="@dimen/layout_padding"
             android:paddingRight="@dimen/layout_padding"
-            android:paddingBottom="@dimen/layout_padding"
             >
 
             <ImageView
@@ -86,7 +85,7 @@
         <com.bigkoo.convenientbanner.ConvenientBanner
             android:id="@+id/cb_main"
             android:layout_width="match_parent"
-            android:layout_height="220dp"
+            android:layout_height="150dp"
             app:canLoop="true"
             />
 

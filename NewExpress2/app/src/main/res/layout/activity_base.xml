@@ -17,7 +17,8 @@
         android:visibility="gone"
         ></LinearLayout>
 
-    <include layout="@layout/title_bar"/>
+    <include layout="@layout/title_bar"
+        />
 
     <LinearLayout style="@style/horizontal_black_line"
         android:visibility="gone"/>

@@ -2,10 +2,12 @@ package com.xaqb.newexpress;
 
 
 import android.graphics.Color;
+import android.os.Build;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.ViewPager;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
@@ -35,9 +37,17 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public void initView() {
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            // 透明状态栏
+            getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+            // 透明导航栏
+            getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
+        }
+
         setContentView(R.layout.activity_main);
         instance = this;
-        setStatusColorB(instance.getResources().getColor(R.color.main),View.VISIBLE,true);
+//        setStatusColorB(instance.getResources().getColor(R.color.main),View.VISIBLE,true);
 
         mFragmentManager = this.getSupportFragmentManager();
         mVpg = (ViewPager) findViewById(R.id.vpg_main);

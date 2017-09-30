@@ -19,11 +19,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import mag.com.xaqb.fireprotectionmag.ClueListActivity;
-import mag.com.xaqb.fireprotectionmag.ComQueryActivity;
-import mag.com.xaqb.fireprotectionmag.MapNavgActivity;
+import mag.com.xaqb.fireprotectionmag.SignInMagActivity;
+import mag.com.xaqb.fireprotectionmag.DailyMagActivity;
 import mag.com.xaqb.fireprotectionmag.ModifyPSWActivity;
-import mag.com.xaqb.fireprotectionmag.MsgListActivity;
-import mag.com.xaqb.fireprotectionmag.PerQueryActivity;
+import mag.com.xaqb.fireprotectionmag.TaskMagActivity;
 import mag.com.xaqb.fireprotectionmag.R;
 
 /**
@@ -34,17 +33,14 @@ public class OneFragment extends BaseFragment implements View.OnClickListener{
 
     private Context instance;
     private View view;
-    private ImageView iv_msg;
-    private ConvenientBanner mCb;
-    private List<Integer> mImageList;
-    private static final int SUCCESS = 1;
-    private static final int FALL = 2;
     private TextView txt_com ;
     private TextView txt_per ;
     private TextView txt_map ;
     private TextView txt_clue ;
     private TextView txt_psw ;
     private TextView txt_exit ;
+    private ConvenientBanner mCb;
+    private List<Integer> mImageList;
 
 
     @Nullable
@@ -58,22 +54,22 @@ public class OneFragment extends BaseFragment implements View.OnClickListener{
         return view;
     }
 
+
     public void initView() {
-        mCb = (ConvenientBanner) view.findViewById(R.id.cb_main);
         txt_com = (TextView) view.findViewById(R.id.txt_com_one);
         txt_per = (TextView) view.findViewById(R.id.txt_per_one);
         txt_map = (TextView) view.findViewById(R.id.txt_map_one);
         txt_clue = (TextView) view.findViewById(R.id.txt_clue_one);
         txt_psw = (TextView) view.findViewById(R.id.txt_psw_one);
         txt_exit = (TextView) view.findViewById(R.id.txt_exit_one);
-        iv_msg = (ImageView) view.findViewById(R.id.iv_msg_main);
+        mCb = (ConvenientBanner) view.findViewById(R.id.cb_main);
+
     }
 
     public void initData() {
         mImageList = new ArrayList();
-        mImageList.add(R.mipmap.main_pic1);
-        mImageList.add(R.mipmap.main_pic2);
-        mImageList.add(R.mipmap.main_pic3);
+        mImageList.add(R.mipmap.u39);
+        mImageList.add(R.mipmap.u41);
         cbSetPage();
         mCb.startTurning(2000);
         cbItemEvent();
@@ -86,20 +82,19 @@ public class OneFragment extends BaseFragment implements View.OnClickListener{
         txt_clue.setOnClickListener(this);
         txt_psw.setOnClickListener(this);
         txt_exit.setOnClickListener(this);
-        iv_msg.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.txt_com_one://企业信息
-                intentB(instance, ComQueryActivity.class);
+                intentB(instance, SignInMagActivity.class);
                 break;
             case R.id.txt_per_one://从业人员
-                intentB(instance, PerQueryActivity.class);
+                intentB(instance, TaskMagActivity.class);
                 break;
             case R.id.txt_map_one://地图导航
-                intentB(instance, MapNavgActivity.class);
+                intentB(instance, DailyMagActivity.class);
                 break;
             case R.id.txt_clue_one://线索信息
                 intentB(instance, ClueListActivity.class);
@@ -110,12 +105,8 @@ public class OneFragment extends BaseFragment implements View.OnClickListener{
             case R.id.txt_exit_one://退出系统
                 showAdialog(instance,"提示","是否要退出系统?","确定","取消");
                 break;
-            case R.id.iv_msg_main://通知消息
-                intentB(instance, MsgListActivity.class);
-                break;
         }
     }
-
 
     /**
      * 轮播图holder
@@ -164,5 +155,6 @@ public class OneFragment extends BaseFragment implements View.OnClickListener{
             }
         });
     }
+
 
 }

@@ -25,7 +25,7 @@
         android:layout_gravity="bottom"
         android:gravity="bottom"
         android:layout_marginTop="@dimen/small_text"
-
+        android:visibility="gone"
         >
         <RadioButton
             android:id="@+id/rb_one_main"

@@ -1,19 +1,18 @@
 package mag.com.xaqb.fireprotectionmag;
 
+public class DailyMagActivity extends BaseActivity {
+    private DailyMagActivity instance;
 
-
-public class ClueDetialActivity extends BaseActivity {
-    ClueDetialActivity instance;
 
     @Override
     public void initTitle() {
-        setTitleB("线索详情");
+        setTitleB("日志管理");
     }
 
     @Override
     public void initView() {
         instance = this;
-        setContentView(R.layout.activity_clue_detial);
+        setContentView(R.layout.activity_daily_mag);
     }
 
     @Override

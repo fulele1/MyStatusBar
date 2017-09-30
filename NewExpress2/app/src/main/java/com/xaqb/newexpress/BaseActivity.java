@@ -389,8 +389,8 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
                         String key1,String value1,
                         String key2, String value2,
                         String key3,String value3,
-                        String value4,String key4,
-                        String value5,String key5){
+                        String key4,String value4,
+                        String key5,String value5){
         mIntent = new Intent(context,cla);
         mIntent.putExtra(key1,value1);
         mIntent.putExtra(key2,value2);
@@ -507,6 +507,32 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
                 .addParams(p2,v2)
                 .addParams(p3,v3)
                 .addParams(p4,v4)
+                .build()
+                .execute(new StringCallback() {
+                    @Override
+                    public void onError(okhttp3.Call call, Exception e, int i) {
+                        //请求出错
+                        mLoadingDialog.dismiss();
+                        showToastB("网络连接异常");
+                    }
+
+                    @Override
+                    public void onResponse(String string, int i) {
+                        //请求成功
+                        mOnOkDataFinishedListener.okDataFinishedListener(string);
+                    }
+                });
+    }
+
+    public void okPostConnectionB(String url, String p1,String v1, String p2,String v2,String p3,String v3,String p4,String v4,String p5,String v5){
+        OkHttpUtils
+                .post()
+                .url(url)
+                .addParams(p1,v1)
+                .addParams(p2,v2)
+                .addParams(p3,v3)
+                .addParams(p4,v4)
+                .addParams(p5,v5)
                 .build()
                 .execute(new StringCallback() {
                     @Override

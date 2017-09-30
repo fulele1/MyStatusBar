@@ -28,7 +28,6 @@
         android:gravity="center"
         android:layout_gravity="center"
         android:textSize="@dimen/title_size"
-        android:text="标题"
         />
 
     <TextView

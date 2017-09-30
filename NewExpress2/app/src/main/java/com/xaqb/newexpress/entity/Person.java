@@ -5,7 +5,18 @@ package com.xaqb.newexpress.entity;
  */
 
 public class Person {
+
     private String name;
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    private String id;
     private String six;
     private String tel;
     private String ide;

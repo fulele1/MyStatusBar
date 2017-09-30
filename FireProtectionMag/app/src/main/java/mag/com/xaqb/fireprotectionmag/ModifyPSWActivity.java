@@ -32,7 +32,6 @@ public class ModifyPSWActivity extends BaseActivity {
     public void initView() {
         setContentView(R.layout.activity_modify_psw);
         instance = this;
-        setStatusColorB(instance.getResources().getColor(R.color.wirte), View.VISIBLE,true);
         mEtOld = (EditText) findViewById(R.id.et_old_modify);
         mEtNew = (EditText) findViewById(R.id.et_new_modify);
         mEtCon = (EditText) findViewById(R.id.et_con_modify);

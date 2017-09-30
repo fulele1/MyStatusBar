@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="mag.com.xaqb.fireprotectionmag">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -32,19 +37,20 @@
             android:value="24d7c26a80432cf52690a9c6bb966841" />
 
         <activity android:name=".ModifyPSWActivity" />
-        <activity android:name=".ComQueryActivity" />
+        <activity android:name=".SignInMagActivity" />
         <activity android:name=".ComListActivity" />
         <activity android:name=".ComDetialActivity" />
-        <activity android:name=".PerQueryActivity" />
+        <activity android:name=".TaskMagActivity" />
         <activity android:name=".PerListActivity" />
         <activity android:name=".PerDetailActivity" />
-        <activity android:name=".MapNavgActivity" />
+        <activity android:name=".DailyMagActivity" />
         <activity android:name=".ClueListActivity" />
         <activity android:name=".ClueDetialActivity" />
         <activity android:name=".MsgDetailActivity" />
         <activity android:name=".DataDetailActivity" />
         <activity android:name=".SearchBrandActivity" />
         <activity android:name=".SearchOrgActivity" />
+        <activity android:name=".SignInDetailActivity"></activity>
     </application>
 
 </manifest>
