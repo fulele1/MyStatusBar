@@ -1,14 +1,14 @@
 <resources>
     <string name="app_name">消防管理端</string>
-    <string name="edit">搜索内容...</string>
+    <string name="edit">消防安全系统</string>
     <string name="shalou">代取件</string>
     <string name="cars">运送中</string>
     <string name="check">已签收</string>
     <string name="kefu">客服中心</string>
     <string name="per_msg">任务管理</string>
     <string name="com_msg">签到管理</string>
-    <string name="map">日志管理</string>
-    <string name="clue_msg">下发公告</string>
+    <string name="map">日报管理</string>
+    <string name="clue_msg">通知公告</string>
     <string name="exit">退出系统</string>
     <string name="mdf_psw">修改密码</string>
     <string name="comurl">www.qbdongdong.com</string>

@@ -44,8 +44,8 @@
         <activity android:name=".PerListActivity" />
         <activity android:name=".PerDetailActivity" />
         <activity android:name=".DailyMagActivity" />
-        <activity android:name=".ClueListActivity" />
-        <activity android:name=".ClueDetialActivity" />
+        <activity android:name=".AnnouncementListActivity" />
+        <activity android:name=".AnnouncementActivity" />
         <activity android:name=".MsgDetailActivity" />
         <activity android:name=".DataDetailActivity" />
         <activity android:name=".SearchBrandActivity" />

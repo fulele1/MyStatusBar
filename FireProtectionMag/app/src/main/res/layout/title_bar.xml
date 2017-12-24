@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="80dp"
     android:orientation="horizontal"
-    android:background="@color/wirte"
+    android:background="@color/main"
     android:paddingTop="@dimen/activity_horizontal_margins"
     >
     <TextView
@@ -12,8 +12,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="返回"
-        android:textColor="@color/main"
-        android:drawableLeft="@mipmap/back"
+        android:textColor="@color/wirte"
+        android:drawableLeft="@mipmap/back_title"
         android:gravity="center"
         android:layout_gravity="center"
         android:onClick="onBack"
@@ -29,6 +29,7 @@
         android:gravity="center"
         android:layout_gravity="center"
         android:textSize="@dimen/title_size"
+        android:textColor="@color/wirte"
         />
 
     <TextView
@@ -36,7 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="咚咚"
-        android:drawableLeft="@mipmap/back"
+        android:drawableLeft="@mipmap/back_title"
         android:visibility="invisible"
         />
 </LinearLayout>

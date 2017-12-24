@@ -84,7 +84,8 @@ public class LoginActivity extends BaseActivity implements OnOkDataFinishedListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.bt_login_login://登录按钮
-                login();
+//                login();
+                intentB(instance, MainActivity.class);
                 break;
             case R.id.tv_find_login://找回密码
                 intentB(instance, FindActivity.class);

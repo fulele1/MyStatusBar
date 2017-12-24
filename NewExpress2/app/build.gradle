@@ -19,6 +19,8 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+
+
     buildTypes {
         release {
             minifyEnabled false
@@ -37,11 +39,24 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile 'com.android.support:appcompat-v7:25.2.0'
-    compile 'com.bigkoo:convenientbanner:2.0.5'//轮播图
+    compile 'com.bigkoo:convenientbanner:2.0.5'
+    //轮播图
     testCompile 'junit:junit:4.12'
     compile 'com.google.android.gms:play-services-appindexing:8.4.0'
     compile files('libs/okhttp-3.4.2.jar')
     compile files('libs/gson-2.8.0.jar')
     compile files('libs/zxing.jar')
     compile files('libs/mpandroidchartlibrary-2-1-6.jar')
+    compile 'com.amap.api:location:latest.integration'
+    //定位功能
+    compile 'com.amap.api:search:latest.integration'
+    //搜索功能
+    compile 'com.amap.api:navi-3dmap:latest.integration'
+    //导航功能
+    compile files('libs/Msc.jar')
 }
+
+
+
+
+

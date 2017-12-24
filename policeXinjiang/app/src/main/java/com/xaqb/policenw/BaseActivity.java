@@ -53,6 +53,9 @@ public abstract class BaseActivity extends Activity implements View.OnClickListe
     OnDataFinishedLinstern mDataFinishedLinstern;
     private Toast toast;
 
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

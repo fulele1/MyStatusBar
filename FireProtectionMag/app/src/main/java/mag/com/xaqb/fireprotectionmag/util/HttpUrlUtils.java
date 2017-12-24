@@ -23,16 +23,16 @@ public class HttpUrlUtils {
         return getBaseUrl() + "mfirestation/index/login";
     }
 
-
     /**
-     * 品牌
-     * www.newexpress.com/v1/common/data/getBranch
-     *
+     * 退出
+     * www.firecontrol.com/v1/mfirestation/index/logout
      * @return
      */
-    public String getBrand() {
-        return getBaseUrl() + "common/data/getBranch";
+    public String userLogout(){
+        return getBaseUrl() + "mfirestation/index/logout";
     }
+
+
 
 
     /**
@@ -45,41 +45,6 @@ public class HttpUrlUtils {
         return getBaseUrl() + "common/data/securityorg";
     }
 
-    /**
-     * 企业查询
-     * www.newexpress.com/v1/governor/company/search
-     *
-     * @return
-     */
-    public String query_com() {
-        return getBaseUrl() + "governor/company/search";
-    }
 
-    /**
-     * www.newexpress.com/v1/governor/company/:id
-     *
-     * @return
-     */
-    public String detail_com() {
-        return getBaseUrl() + "governor/company/";
-    }
 
-    /**
-     * www.newexpress.com/v1/governor/staff/search
-     * 人员查询
-     *
-     * @return
-     */
-    public String query_per() {
-        return getBaseUrl() + "governor/staff/search";
-    }
-
-    /**
-     * www.newexpress.com/v1/governor/staff/:id
-     *
-     * @return
-     */
-    public String detail_per() {
-        return getBaseUrl() + "governor/staff/";
-    }
 }

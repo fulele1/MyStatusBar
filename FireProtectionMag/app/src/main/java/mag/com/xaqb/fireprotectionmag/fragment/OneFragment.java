@@ -18,7 +18,7 @@ import com.bigkoo.convenientbanner.listener.OnItemClickListener;
 import java.util.ArrayList;
 import java.util.List;
 
-import mag.com.xaqb.fireprotectionmag.ClueListActivity;
+import mag.com.xaqb.fireprotectionmag.AnnouncementListActivity;
 import mag.com.xaqb.fireprotectionmag.SignInMagActivity;
 import mag.com.xaqb.fireprotectionmag.DailyMagActivity;
 import mag.com.xaqb.fireprotectionmag.ModifyPSWActivity;
@@ -63,7 +63,6 @@ public class OneFragment extends BaseFragment implements View.OnClickListener{
         txt_psw = (TextView) view.findViewById(R.id.txt_psw_one);
         txt_exit = (TextView) view.findViewById(R.id.txt_exit_one);
         mCb = (ConvenientBanner) view.findViewById(R.id.cb_main);
-
     }
 
     public void initData() {
@@ -97,7 +96,7 @@ public class OneFragment extends BaseFragment implements View.OnClickListener{
                 intentB(instance, DailyMagActivity.class);
                 break;
             case R.id.txt_clue_one://线索信息
-                intentB(instance, ClueListActivity.class);
+                intentB(instance, AnnouncementListActivity.class);
                 break;
             case R.id.txt_psw_one://修改密码
                 intentB(instance, ModifyPSWActivity.class);
@@ -155,6 +154,5 @@ public class OneFragment extends BaseFragment implements View.OnClickListener{
             }
         });
     }
-
 
 }
