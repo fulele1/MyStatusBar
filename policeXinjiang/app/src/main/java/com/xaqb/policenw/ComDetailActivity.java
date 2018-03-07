@@ -62,7 +62,7 @@ public class ComDetailActivity extends BaseActivity implements OnDataFinishedLin
         mTvPost = (TextView) findViewById(R.id.txt_post_com_dt);
         mLayout = (LinearLayout) findViewById(R.id.layout_place);
         TextView tvTitle = (TextView) findViewById(R.id.tv_title);
-        tvTitle.setText("企业详情");
+        tvTitle.setText(getResources().getString(R.string.com_detail));
     }
 
     @Override
@@ -106,7 +106,7 @@ public class ComDetailActivity extends BaseActivity implements OnDataFinishedLin
             getData(data);
         } else {
             //响应失败
-            Toast.makeText(instance, "未查询到有效数据", Toast.LENGTH_SHORT).show();
+            Toast.makeText(instance, getResources().getString(R.string.no_data_get), Toast.LENGTH_SHORT).show();
         }
         loadingDialog.dismiss();
     }
@@ -179,7 +179,7 @@ public class ComDetailActivity extends BaseActivity implements OnDataFinishedLin
 
 
 // y轴数据集
-        LineDataSet mLineDataSet2 = new LineDataSet(y2, "收寄数量");
+        LineDataSet mLineDataSet2 = new LineDataSet(y2,getResources().getString(R.string.get_count));
 
         // 用y轴的集合来设置参数
         // 线宽
@@ -241,7 +241,7 @@ public class ComDetailActivity extends BaseActivity implements OnDataFinishedLin
         });
 
         // y轴数据集
-        LineDataSet mLineDataSet = new LineDataSet(y, "投递数量");
+        LineDataSet mLineDataSet = new LineDataSet(y, getResources().getString(R.string.post_count));
 
         // 用y轴的集合来设置参数
         // 线宽
@@ -321,10 +321,10 @@ public class ComDetailActivity extends BaseActivity implements OnDataFinishedLin
         // 是否在折线图上添加边框
         mLineChart.setDrawBorders(false);
 
-        mLineChart.setDescription("数量");// 数据描述
+        mLineChart.setDescription(getResources().getString(R.string.count));// 数据描述
 
         // 如果没有数据的时候，会显示这个，类似listview的emtpyview
-        mLineChart.setNoDataTextDescription("如果传给MPAndroidChart的数据为空，那么你将看到这段文字。@Zhang Phil");
+        mLineChart.setNoDataTextDescription(getResources().getString(R.string.if_none));
 
         // 是否绘制背景颜色。
         // 如果mLineChart.setDrawGridBackground(false)，

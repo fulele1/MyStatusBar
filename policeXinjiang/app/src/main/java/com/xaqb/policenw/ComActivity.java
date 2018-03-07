@@ -43,7 +43,7 @@ public class ComActivity extends BaseActivity implements OnDataFinishedLinstern 
         mList.setDividerHeight(15);
         mTvCount = (TextView) findViewById(R.id.tv_count_com_list);
         TextView tvTitle = (TextView) findViewById(R.id.tv_title);
-        tvTitle.setText("企业");
+        tvTitle.setText(getResources().getString(R.string.com));
     }
 
     @Override

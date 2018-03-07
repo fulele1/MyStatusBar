@@ -51,6 +51,26 @@
     <string name="dummy_content">DUMMY\nCONTENT</string>
 
     <string name="title_activity_find_key">FindKeyActivity</string>
+    <string name="no_data">暂无数据</string>
+    <string name="waiting">请稍后...</string>
+    <string name="networkExp">网络访问异常</string>
+    <string name="xian">西安</string>
+    <string name="chognqing">重庆</string>
+    <string name="lingshanzhou">四川凉山州</string>
+    <string name="dongying">东营</string>
+    <string name="taian">泰安</string>
+    <string name="naimanqi">奈曼旗</string>
+    <string name="weinan">渭南</string>
+    <string name="bengbu">蚌埠</string>
+    <string name="xinjiang">新疆</string>
+    <string name="com">企业</string>
+    <string name="com_detail">企业详情</string>
+    <string name="no_data_get">未查询到有效数据</string>
+    <string name="get_count">收寄数量</string>
+    <string name="post_count">投递数量</string>
+    <string name="count">数量</string>
+    <string name="if_none">如果传给MPAndroidChart的数据为空，那么你将看到这段文字。@Zhang Phil</string>
+    <string name="change_pw">修改密码</string>
 
 
     <string name="hello">Hello World, MainActivity!</string>

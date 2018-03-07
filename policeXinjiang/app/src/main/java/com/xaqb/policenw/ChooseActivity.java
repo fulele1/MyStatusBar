@@ -40,7 +40,16 @@ public class ChooseActivity extends BaseActivity {
 
     @Override
     public void initData() {
-        String[] citys = {"西安", "重庆", "四川凉山州", "东营", "泰安", "奈曼旗", "渭南", "蚌埠","新疆"};
+        String[] citys = {getResources().getString(R.string.xian),
+                getResources().getString(R.string.chognqing),
+                getResources().getString(R.string.lingshanzhou),
+                getResources().getString(R.string.dongying),
+                getResources().getString(R.string.taian),
+                getResources().getString(R.string.naimanqi),
+                getResources().getString(R.string.weinan),
+                getResources().getString(R.string.bengbu),
+                getResources().getString(R.string.xinjiang)
+        };
         String[] urls = {
                 "http://xawz.xaqianbai.net:8090",
                 "http://ejd.cqlandun.com",

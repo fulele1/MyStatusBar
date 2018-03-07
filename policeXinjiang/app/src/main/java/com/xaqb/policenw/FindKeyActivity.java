@@ -42,7 +42,7 @@ public class FindKeyActivity extends BaseActivity {
         etConfirmPsw = (EditText) findViewById(R.id.et_confirm_psw);
         btComplete = (Button) findViewById(R.id.bt_complete);
         TextView tvTitle = (TextView) findViewById(R.id.tv_title);
-        tvTitle.setText("修改密码");
+        tvTitle.setText(getResources().getString(R.string.change_pw));
     }
 
     @Override
@@ -72,11 +72,6 @@ public class FindKeyActivity extends BaseActivity {
         pswmd5 = ChangeUtil.md5(psw);
         confirmPsw = etConfirmPsw.getText().toString().trim();
         confirmPswmd5 = ChangeUtil.md5(confirmPsw);
-//        if (phone == null || phone.equals("")) {
-//            showToast("请输入手机号码");
-//        } else if (vCode == null || vCode.equals("")) {
-//            showToast("请输入验证码");
-//        }
         if (old.equals("")) {
             showToast("请输入旧密码");
         } else if (psw.equals("")) {
@@ -86,14 +81,6 @@ public class FindKeyActivity extends BaseActivity {
         } else if (!psw.equals(confirmPsw)) {
             showToast("两次输入的密码不一致");
         } else {
-//            RequestParams requestParams = new RequestParams();
-//            requestParams.addBodyParameter("tel", phone);
-//            requestParams.addBodyParameter("new_password", psw);
-//            requestParams.addBodyParameter("confirm_password", confirmPsw);
-//            requestParams.addBodyParameter("code", vCode);
-//            requestParams.addBodyParameter("codekey", codeKey);
-//            ajax(requestParams, HttpUrlUtils.getHttpUrl().reset_password());
-//            LogUtils.i(HttpUrlUtils.getHttpUrl().reset_password());
 
             loadingDialog.show("正在修改");
 

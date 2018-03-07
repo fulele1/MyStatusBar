@@ -168,7 +168,7 @@ public abstract class BaseActivity extends Activity implements View.OnClickListe
     protected void setEmptyView(ListView listView) {
         TextView emptyView = new TextView(context);
         emptyView.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
-        emptyView.setText("暂无数据！");
+        emptyView.setText(getResources().getString(R.string.no_data));
         emptyView.setGravity(Gravity.CENTER);
         emptyView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16);
         emptyView.setVisibility(View.GONE);
@@ -293,7 +293,7 @@ public abstract class BaseActivity extends Activity implements View.OnClickListe
      */
     public void getOkConnection(String url) {
 
-        loadingDialog.show("请稍后...");
+        loadingDialog.show(getResources().getString(R.string.waiting));
         OkHttpUtils
                 .get()
                 .url(url)
@@ -302,7 +302,7 @@ public abstract class BaseActivity extends Activity implements View.OnClickListe
                     @Override
                     public void onError(Call call, Exception e, int i) {
                         loadingDialog.dismiss();
-                        showToast("网络访问异常");
+                        showToast(getResources().getString(R.string.networkExp));//网络异常
                     }
 
                     @Override
